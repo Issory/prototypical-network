@@ -93,3 +93,4 @@ for ep in range(n_epochs):
         _, ls, ac = sess.run([train_op, ce_loss, acc], feed_dict={x: support, q: query, y:labels})
         if (epi+1) % 50 == 0:
             print('[epoch {}/{}, episode {}/{}] => loss: {:.5f}, acc: {:.5f}'.format(ep+1, n_epochs, epi+1, n_episodes, ls, ac))
+            
